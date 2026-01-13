@@ -5,7 +5,6 @@ services:
     container_name: go-app
     build: .
     environment:
-      # Option A: Mapping format (no dashes)
       DATABASE_URL: "host=go_db user=postgres password=postgres dbname=postgres sslmode=disable"
     ports:
       - "8080:8080"
